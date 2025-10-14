@@ -1,11 +1,13 @@
+import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 import Providers from "./providers";
 import Analytics from "@/components/Analytics";
 import Footer from "@/components/Footer";
 
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") || "https://wildmanlabs.xyz";
+// ✅ Make TS happy: avoid calling .replace on a possibly-undefined value
+const RAW_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL;
+const SITE_URL = (RAW_SITE_URL ? RAW_SITE_URL.replace(/\/$/, "") : "https://wildmanlabs.xyz") as string;
 
 export const metadata: Metadata = {
   title: "Wildman Labs — Meme, Code & Consciousness",
@@ -29,7 +31,7 @@ export const metadata: Metadata = {
   icons: { icon: "/favicon.ico" },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className="bg-black text-zinc-100">
