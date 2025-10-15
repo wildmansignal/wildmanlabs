@@ -1,8 +1,8 @@
 export const EGO = {
   SYMBOL: "EGO",
-  MINT: "95aaox9KRwWaxt3PP4JJFvTRPhbGUyuGgykohkY5tjGg",
-  DEXSCREENER_PAIR: "3fzD4fvh2MczP5hz7AcChHftKJdW5TjM3sVgX9jEgoLp",
-  BIRDEYE_TOKEN: "95aaox9KRwWaxt3PP4JJFvTRPhbGUyuGgykohkY5tjGg",
+  MINT: "73XigEsTTp1KjtvFrPA7FcPZYKCn52uKeAnSYkn5u6dq", // ✅ Final Mint
+  DEXSCREENER_PAIR: "3fzD4fvh2MczP5hz7AcChHftKJdW5TjM3sVgX9jEgoLp", // update this later once your Raydium pool is created
+  BIRDEYE_TOKEN: "73XigEsTTp1KjtvFrPA7FcPZYKCn52uKeAnSYkn5u6dq", // ✅ same as MINT
   LINKS: {
     X: "https://x.com/wildmansignal",
     DISCORD: "https://discord.gg/wildmanlabs",
